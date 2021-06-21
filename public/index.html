@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Hygeia</title>
+        <link href="./style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="sidebar">
+            <div id="account-information">
+                <div id="account-icon" class="material-icons">account_circle</div>
+                <div id="account-welcome">
+                    Olá,
+                    <div id="account-name">Eduardo Silva</div>
+                </div>
+            </div>
+
+            <div id="modules">
+                <div id="modules-search"></div>
+                <div id="modules-list"></div>
+            </div>
+
+            <div class="spacer"></div>
+
+            <button id="log-out">Desconectar-se</button>
+        </div>
+
+        <div id="app">
+            <div id="patients">
+                <div id="patients-search"></div>
+                <div id="patients-list"></div>
+            </div>
+            <div id="module-body"></div>
+        </div>
+
+        <script src="./js/client.js"></script>
+        <script src="./js/patients-controller.js"></script>
+        <script src="./js/modules-controller.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
+</html>

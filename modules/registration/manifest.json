@@ -1,0 +1,16 @@
+{
+    "id": "registration",
+    "title": "Registrar",
+    "roles": ["Administrator", "Physician", "Surgeon", "Nurse", "Pharmacist", "Kitchen"],
+    "searchParameters": [
+        {
+            "id": "cpf",
+            "title": "CPF"
+        },
+        {
+            "id": "name",
+            "title": "Nome"
+        }
+    ],
+    "start": ["python", "{CWD}/main.py"]
+}

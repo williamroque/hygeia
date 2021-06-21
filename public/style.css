@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/icons.otf);
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+div#patients {
+    flex-grow: 1;
+    height: 100%;
+    padding: 15px 0;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+
+div#app {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-grow: 1;
+}
+
+div#patients-list {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.patient-entry {
+    width: 65%;
+    height: 120px;
+    box-shadow: -3px 3px 8px 1px #bbbbbb73;
+    margin: 8px 0;
+    box-sizing: border-box;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+div#sidebar {
+    width: 260px;
+    height: 95%;
+    background: none;
+    border-right: solid 2px #1d3c56;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.patient-entry-name {
+    font-family: times new roman;
+    font-size: 12pt;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.patient-entry-subtitle {
+    color: #00000080;
+    font-size: 11pt;
+    width: fit-content;
+    border: none;
+    border-collapse: collapse;
+}
+
+div#account-icon {
+    font-size: 40pt;
+    color: #1d3c56;
+    margin-bottom: 5px;
+}
+
+div#account-information {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 10px;
+    border-bottom: solid 3px #1d3c56;
+    padding-bottom: 28px;
+    text-align: center;
+}
+
+div#account-name {
+    font-family: helvetica;
+    color: #133654;
+    font-size: 11pt;
+    font-weight: 100;
+    margin-top: 5px;
+}
+
+div#account-welcome {
+    color: #133654;
+    font-family: helvetica;
+    font-size: 15pt;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-left: dashed 1px #1d3c56;
+    margin-left: 10px;
+    padding-left: 12px;
+}
+
+div.module-entry {
+    width: 100%;
+    padding: 5px 12px;
+    border-bottom: solid 1px #6b879e26;
+    color: #50718c;
+    font-family: helvetica;
+    font-size: 12pt;
+    font-weight: 100;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+div.module-entry:hover {
+    color: #224058;
+    border-bottom: solid 1px #6b879e52;
+}
+
+div#modules-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+div#modules {
+    max-height: 65%;
+}
+
+button#log-out {
+    border: none;
+    background: none;
+    font-family: helvetica;
+    color: #1e3b52;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button#log-out:active {
+    color: #4277a0;
+}
+
+.spacer {
+    flex-grow: 1;
+}
