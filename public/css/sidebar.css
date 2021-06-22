@@ -1,72 +1,3 @@
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(/icons.otf);
-}
-
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
-}
-
-html, body {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-div#patients {
-    flex-grow: 1;
-    height: 100%;
-    padding: 15px 0;
-    box-sizing: border-box;
-    overflow: scroll;
-}
-
-div#app {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    flex-grow: 1;
-}
-
-div#patients-list {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-div.patient-entry {
-    width: 65%;
-    height: 120px;
-    box-shadow: -3px 3px 8px 1px #bbbbbb73;
-    margin: 8px 0;
-    box-sizing: border-box;
-    padding: 0 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    cursor: pointer;
-}
-
 div#sidebar {
     width: 260px;
     height: 95%;
@@ -78,20 +9,6 @@ div#sidebar {
     box-sizing: border-box;
 }
 
-.patient-entry-name {
-    font-family: times new roman;
-    font-size: 12pt;
-    color: #333;
-    margin-bottom: 3px;
-}
-
-.patient-entry-subtitle {
-    color: #00000080;
-    font-size: 11pt;
-    width: fit-content;
-    border: none;
-    border-collapse: collapse;
-}
 
 div#account-icon {
     font-size: 40pt;
@@ -170,12 +87,9 @@ button#log-out {
     text-transform: uppercase;
     font-weight: 600;
     cursor: pointer;
+    font-size: 10pt;
 }
 
 button#log-out:active {
     color: #4277a0;
-}
-
-.spacer {
-    flex-grow: 1;
 }

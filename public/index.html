@@ -2,10 +2,20 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
         <title>Hygeia</title>
-        <link href="./style.css" rel="stylesheet"/>
+        <link href="css/index.css" rel="stylesheet"/>
+        <link href="css/patients.css" rel="stylesheet"/>
+        <link href="css/sidebar.css" rel="stylesheet"/>
+        <link href="css/mobile.css" rel="stylesheet"/>
     </head>
     <body>
+        <div id="mobile-menu">
+            <div id="toggle-sidebar-wrapper">
+                <button id="toggle-sidebar" class="material-icons">menu</button>
+            </div>
+        </div>
+
         <div id="sidebar">
             <div id="account-information">
                 <div id="account-icon" class="material-icons">account_circle</div>
@@ -33,9 +43,10 @@
             <div id="module-body"></div>
         </div>
 
-        <script src="./js/client.js"></script>
-        <script src="./js/patients-controller.js"></script>
-        <script src="./js/modules-controller.js"></script>
-        <script src="./js/index.js"></script>
+        <script src="js/client.js"></script>
+        <script src="js/patients-controller.js"></script>
+        <script src="js/modules-controller.js"></script>
+        <script src="js/mobile.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>

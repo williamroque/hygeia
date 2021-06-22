@@ -1,0 +1,60 @@
+* {
+    touch-action: manipulation;
+}
+
+.menu-shadow {
+    box-shadow: -3px 3px 8px 1px #bbbbbb73;
+}
+
+div#mobile-menu {
+    width: 100%;
+    height: 74px;
+    padding: 0;
+    display: none;
+    position: fixed;
+    top: 0;
+    background: white;
+    align-items: center;
+    justify-content: center;
+}
+
+div#toggle-sidebar-wrapper {
+    width: 85%;
+}
+
+button#toggle-sidebar {
+    background: none;
+    border: none;
+    color: #142738;
+    font-size: 25pt;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 690px) {
+    div#sidebar {
+        display: none;
+        padding-top: 50px;
+        border-right: none;
+        width: 95%;
+    }
+
+    div.patient-entry {
+        width: 85%;
+    }
+
+    div#mobile-menu {
+        display: flex;
+    }
+
+    div#app {
+        margin-top: 60px;
+    }
+
+    button#log-out {
+        color: #ffffff;
+        height: 57px;
+        background: #1e3b52;
+    }
+}

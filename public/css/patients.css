@@ -1,0 +1,42 @@
+div#patients {
+    flex-grow: 1;
+    height: 100%;
+    padding: 15px 0;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+
+div#patients-list {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.patient-entry {
+    width: 65%;
+    height: 120px;
+    box-shadow: -3px 3px 8px 1px #bbbbbb73;
+    margin: 8px 0;
+    box-sizing: border-box;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.patient-entry-name {
+    font-family: times new roman;
+    font-size: 12pt;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.patient-entry-subtitle {
+    color: #00000080;
+    font-size: 11pt;
+    width: fit-content;
+    border: none;
+    border-collapse: collapse;
+}
