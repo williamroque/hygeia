@@ -50,6 +50,7 @@ button#toggle-sidebar {
 
     div#app {
         margin-top: 60px;
+        height: auto;
     }
 
     button#log-out {

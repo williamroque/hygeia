@@ -5,6 +5,8 @@ const patientsListContainer = document.querySelector('#patients');
 const mobileMenu = document.querySelector('#mobile-menu');
 
 
+let sidebarHidden = true;
+
 if (window.innerWidth <= 690) {
     sidebar.style.display = 'none';
 }
@@ -13,21 +15,26 @@ window.addEventListener('resize', () => {
     if (window.innerWidth > 690) {
         sidebar.style.display = 'flex';
         appContainer.classList.remove('hide');
-        toggleSidebarButton.innerText = 'menu';
-    } else {
+    } else if (sidebarHidden) {
         sidebar.style.display = 'none';
+        appContainer.classList.remove('hide');
+        toggleSidebarButton.innerText = 'menu';
     }
 }, false);
 
 toggleSidebarButton.addEventListener('click', () => {
-    if (sidebar.style.display === 'none') {
+    if (sidebarHidden) {
         sidebar.style.display = 'flex';
         appContainer.classList.add('hide');
         toggleSidebarButton.innerText = 'arrow_back';
+
+        sidebarHidden = false;
     } else {
         sidebar.style.display = 'none';
         appContainer.classList.remove('hide');
         toggleSidebarButton.innerText = 'menu';
+
+        sidebarHidden = true;
     }
 }, false);
 
